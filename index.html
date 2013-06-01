@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en_US">
+<head>
+  <meta charset="UTF-8" />
+  <title>Donate To Open Source</title>
+  <link href="style.css" rel="stylesheet" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.1/jquery.min.js"></script>
+</head>
+<body class="grad">
+  <header>
+    <div class="wrapper">
+      Donate To <span class="bold">Open Source</span><span class="light">.com<span>
+    </div>
+  </header>
+  <section class="info">
+    <div class="wrapper">
+      You know all software you use daily - completely for free?</br>
+      Throw some bucks on them, even a couple of dollars will do a lot!
+    </div>
+  </section>
+  <section class="content wrapper">
+  </section>
+  <footer class="wrapper">
+    Made by Daniel Jonsson.</br>
+    Want something changed? <a href="https://twitter.com/DanielJonss" title="@DanielJonss">Tweet me</a>, <a href="">create a ticket on Github</a> or <a href="">commit a change</a>!
+  </footer>
+  <script type="text/javascript">
+    var $data = [
+      [ "Arch Linux",
+      "https://www.archlinux.org/",
+      "https://www.archlinux.org/donate/",
+      "Lightweight Linux distribution for the advanced users.",
+      false, false, false, true, false, false],
+      [ "Ardour",
+      "http://ardour.org/",
+      "http://community.ardour.org/community",
+      "Powerful, professional grade audio recording and editing for Linux and MacOS X.",
+      false, true, false, false, false, false],
+      [ "Bitcoin Foundation",
+      "https://bitcoinfoundation.org/",
+      "https://bitcoinfoundation.org/donate",
+      "Standardizes, protects and promotes the use of Bitcoin cryptographic money for the benefit of users worldwide.",
+      true, false, false, false, false, false],
+      [ "CyanogenMod",
+      "http://www.cyanogenmod.org/",
+      "http://www.cyanogenmod.org/community",
+      "Custom Android roms for a number of devices.",
+      false, true, false, false, false, false],
+      [ "Debian",
+      "http://www.debian.org/",
+      "http://www.debian.org/donations",
+      "The Debian Linux Distro.",
+      false, false, false, false, false, false],
+      [ "Deluge",
+      "http://deluge-torrent.org/",
+      "http://dev.deluge-torrent.org/",
+      "Feature-rich torrent client and the open source alternative to μTorrent.",
+      false, true, false, false, false, false],
+      [ "DOSBox",
+      "http://www.dosbox.com/",
+      "http://www.dosbox.com/",
+      "A DOS/x86 emulator focused on playing DOS games.",
+      false, true, false, false, false, false],
+      [ "elementary OS",
+      "http://elementaryos.org/",
+      "http://elementaryos.org/donate",
+      "A Linux distro focused on particular design sensibilities and ease-of-use.",
+      false, true, false, true, false, true],
+      [ "GIMP",
+      "http://www.gimp.org/",
+      "http://www.gimp.org/donating/",
+      "The GNU Image Manipulation Program.",
+      true, true, false, false, false, true],
+      [ "GNOME",
+      "http://www.gnome.org/",
+      "http://www.gnome.org/friends/",
+      "You know GNOME.  Between the Desktop Environment, and the supporting applications, the GNOME project does a lot.",
+      false, true, false, false, false, false],
+      [ "Haiku OS",
+      "https://www.haiku-os.org/",
+      "http://www.haiku-inc.org/donations.html#online",
+      "A BeOS-inspired, Open Source operating system.  And quite a nice one at that.",
+      true, true, true, false, true, true],
+      [ "Inkscape",
+      "http://inkscape.org/",
+      "http://inkscape.org/donate.php?lang=en",
+      "Vector drawing program.  And a rather awesome one, at that.",
+      false, true, false, false, true, false],
+      [ "KDE",
+      "http://www.kde.org/",
+      "http://www.kde.org/community/donations/",
+      "KDE is an advanced Qt-based desktop environment and a series of supporting applications/projects.",
+      false, true, false, false, false, false],
+      [ "Laborejo",
+      "http://www.laborejo.org/",
+      "http://www.laborejo.org/Donation",
+      "Music notation software.",
+      false, true, false, false, false, true],
+      [ "LibreOffice",
+      "http://www.libreoffice.org/",
+      "http://donate.libreoffice.org/",
+      "A massive, full featured office suite.",
+      false, true, false, true, false, true],
+      [ "Linux Mint",
+      "http://www.linuxmint.com/",
+      "http://www.linuxmint.com/donors.php",
+      "Linux Mint was originally a modified version of Ubuntu... now it is much more than that.",
+      true, true, false, false, false, false],
+      [ "Lunduke Projects",
+      "http://lunduke.com/",
+      "http://lunduke.com/?page_id=3500",
+      "Developer of the visual programming editor Illumination Software Creator.",
+      true, true, false, false, false, false],
+      [ "Mozilla Foundation",
+      "http://www.mozilla.org/",
+      "https://sendto.mozilla.org/page/contribute/join-mozilla?source=owf_redirect",
+      "Non-profit origanization and developer of Firefox and Firefox OS among other things.",
+      false, true, false, true, false, false],
+      [ "Ubuntu",
+      "http://www.ubuntu.com/",
+      "http://www.ubuntu.com/download/desktop/questions?distro=&bits=&release=",
+      "A popular Debian-based Linux distro.  You may have heard of it.",
+      false, true, false, false, false, false],
+      [ "VideoLAN",
+      "http://www.videolan.org/",
+      "http://www.videolan.org/contribute.html#money",
+      "A video player and converter.  Plays darn near every format on the planet.",
+      false, true, false, false, false, false],
+      [ "Vim",
+      "http://www.vim.org/index.php",
+      "http://www.vim.org/sponsor/index.php",
+      "Popular and powerful text editor for programming.",
+      false, true, false, false, false, false],
+      [ "Wine",
+      "http://www.winehq.org/",
+      "http://www.winehq.org/donate/",
+      "Allows you to run Windows software on your Linux box.",
+      false, true, false, false, true, false],
+      [ "XChat",
+      "http://xchat.org/",
+      "http://xchat.org/donate/",
+      "IRC client for Linux and Windows.",
+      false, true, false, false, false, false]
+    ];
+
+    var $content = $('section.content');
+    for ($i = 0; $i < $data.length; ++$i) {
+      $item = $('<div class="item"></div>');
+      $item.append('<h2><a href="' + $data[$i][1] + '">' + $data[$i][0] + '</a></h2>');
+      $item.append('<p class="donation-link"><a href="' + $data[$i][2] + '">Donation page</a></p>');
+      $item.append('<p class="description">' + $data[$i][3] + '</p>');
+      $takes = $('<div class="takes"></div>');
+      $item.append($takes);
+      if ($data[$i][4]) {
+        $takes.append('<img src="images/bitcoin.png" class="bitcoin" title="Bitcoin" alt="Bitcoin" />');
+      }
+      if ($data[$i][5]) {
+        $takes.append('<img src="images/paypal.jpg" class="paypal" title="PayPal" alt="PayPal" />');
+      }
+      if ($data[$i][6]) {
+        $takes.append('<img src="images/amazon.jpg" class="amazon" title="Amazon Payments" alt="Amazon Payments" />');
+      }
+      if ($data[$i][8]) {
+        $takes.append('<img src="images/googlewallet.png" class="googlewallet" title="Google Wallet" alt="Google Wallet" />');
+      }
+      if ($data[$i][9]) {
+        $takes.append('<img src="images/flattr.png" class="flattr" title="Flattr" alt="Flattr" />');
+      }
+      if ($data[$i][7]) {
+        $takes.append('<img src="images/creditcard.jpg" class="creditcard" title="Credit/debit card" alt="Credit/debit card" />');
+      }
+      $content.append($item);
+    }
+  </script>
+</body>
+</html>
